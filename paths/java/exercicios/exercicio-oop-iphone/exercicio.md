@@ -13,10 +13,10 @@ Neste projeto, projetamos uma representação para um iPhone focando em três co
 ![Diagrama UML](docs/UML-pt-br.png)
 
 ### Classes & Interfaces:
-1. **Classe**:[`IPhone`](#iphonejava)
-2. **Interface**: [`AparelhoTelefonico`](#aparelhotelefonicojava)
-3. **Interface**: [`NavegadorInternet`](#navegadorinternetjava)
-4. **Interface**: [`ReprodutorMusical`](#reprodutormusicaljava)
+1. ***Classe***:[`IPhone`](#iphonejava)
+2. ***Interface***: [`AparelhoTelefonico`](#aparelhotelefonicojava)
+3. ***Interface***: [`NavegadorInternet`](#navegadorinternetjava)
+4. ***Interface***: [`ReprodutorMusical`](#reprodutormusicaljava)
 
 ### Relacionamentos:
 - A classe `IPhone` implementa as interfaces `ReprodutorMusical`, `AparelhoTelefonico` e `NavegadorInternet`.
