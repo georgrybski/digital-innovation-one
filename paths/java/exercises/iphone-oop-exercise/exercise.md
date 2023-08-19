@@ -13,10 +13,10 @@ In this project, we designed a representation for an iPhone focusing on three ma
 ![UML Diagram](docs/UML-en.png)
 
 ### Classes & Interfaces:
-1. ***Class***: `IPhone`
-2. ***Interface***: `MusicPlayer`
-3. ***Interface***: `PhoneDevice`
-4. ***Interface***: `WebBrowser`
+1. ***Class***: [`IPhone`](#iphonejava)
+2. ***Interface***: [`MusicPlayer`](#musicplayerjava)
+3. ***Interface***: [`PhoneDevice`](#phonedevicejava)
+4. ***Interface***: [`WebBrowser`](#webbrowserjava)
 
 ### Relationships:
 - The `iPhone` class implements the `MusicPlayer`, `PhoneDevice`, and `WebBrowser` interfaces.
@@ -25,7 +25,7 @@ In this project, we designed a representation for an iPhone focusing on three ma
 
 Here's a basic representation of the classes and interfaces:
 ####
-### PhoneDevice.java
+### [PhoneDevice.java](./src/java/interfaces/PhoneDevice.java)
 ```java
 public interface PhoneDevice {
     void call(String number);
@@ -34,7 +34,7 @@ public interface PhoneDevice {
 }
 ```
 ####
-### MusicPlayer.java
+### [MusicPlayer.java](./src/java/interfaces/MusicPlayer.java)
 ```java
 public interface MusicPlayer {
     void play();
@@ -43,7 +43,7 @@ public interface MusicPlayer {
 }
 ```
 ####
-### WebBrowser.java
+### [WebBrowser.java](./src/java/interfaces/WebBrowser.java)
 ```java
 public interface WebBrowser {
     void displayPage(String url);
@@ -52,7 +52,7 @@ public interface WebBrowser {
 }
 ```
 ####
-### IPhone.java
+### [IPhone.java](./src/java/model/IPhone.java)
 ```java
 public class IPhone implements MusicPlayer, PhoneDevice, WebBrowser {
 

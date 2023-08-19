@@ -13,19 +13,19 @@ Neste projeto, projetamos uma representação para um iPhone focando em três co
 ![Diagrama UML](docs/UML-pt-br.png)
 
 ### Classes & Interfaces:
-1. **Classe**:`iPhone`
-2. **Interface**: `AparelhoTelefonico`
-3. **Interface**: `NavegadorInternet`
-4. **Interface**: `ReprodutorMusical`
+1. **Classe**:[`IPhone`](#iphonejava)
+2. **Interface**: [`AparelhoTelefonico`](#aparelhotelefonicojava)
+3. **Interface**: [`NavegadorInternet`](#navegadorinternetjava)
+4. **Interface**: [`ReprodutorMusical`](#reprodutormusicaljava)
 
 ### Relacionamentos:
-- A classe `iPhone` implementa as interfaces `ReprodutorMusical`, `AparelhoTelefonico` e `NavegadorInternet`.
+- A classe `IPhone` implementa as interfaces `ReprodutorMusical`, `AparelhoTelefonico` e `NavegadorInternet`.
 
 ## Implementação em Código Java
 
 Aqui está uma representação básica das classes e interfaces:
 ####
-### AparelhoTelefonico.java
+### [AparelhoTelefonico.java](./src/java/interfaces/AparelhoTelefonico.java)
 ```java
 public interface AparelhoTelefonico {
 void ligar(String numero);
@@ -34,7 +34,7 @@ void iniciarCorrerioVoz();
 }
 ```
 ####
-### NavegadorInternet.java
+### [NavegadorInternet.java](./src/java/interfaces/NavegadorInternet.java)
 ```java
 public interface NavegadorInternet {
 void exibirPagina(String url);
@@ -43,7 +43,7 @@ void atualizarPagina();
 }
 ```
 ####
-### ReprodutorMusical.java
+### [ReprodutorMusical.java](./src/java/interfaces/ReprodutorMusical.java)
 ```java
 public interface ReprodutorMusical {
 void tocar();
@@ -52,7 +52,7 @@ void selecionarMusica(String musica);
 }
 ```
 ####
-### IPhone.java
+### [IPhone.java](./src/java/model/IPhone.java)
 ```java
 public class IPhone implements AparelhoTelefonico, NavegadorInternet , ReprodutorMusical {
 
