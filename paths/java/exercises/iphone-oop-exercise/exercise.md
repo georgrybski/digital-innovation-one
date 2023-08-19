@@ -14,9 +14,9 @@ In this project, we designed a representation for an iPhone focusing on three ma
 
 ### Classes & Interfaces:
 1. ***Class***: `IPhone`
-4. ***Interface***: `MusicPlayer`
-2. ***Interface***: `PhoneDevice`
-3. ***Interface***: `WebBrowser`
+2. ***Interface***: `MusicPlayer`
+3. ***Interface***: `PhoneDevice`
+4. ***Interface***: `WebBrowser`
 
 ### Relationships:
 - The `iPhone` class implements the `MusicPlayer`, `PhoneDevice`, and `WebBrowser` interfaces.

@@ -14,18 +14,18 @@ Neste projeto, projetamos uma representação para um iPhone focando em três co
 
 ### Classes & Interfaces:
 1. **Classe**:`iPhone`
-2. **Interface**: `interfaces.AparelhoTelefonico`
-3. **Interface**: `interfaces.NavegadorInternet`
-4. **Interface**: `interfaces.ReprodutorMusical`
+2. **Interface**: `AparelhoTelefonico`
+3. **Interface**: `NavegadorInternet`
+4. **Interface**: `ReprodutorMusical`
 
 ### Relacionamentos:
-- A classe `iPhone` implementa as interfaces `interfaces.ReprodutorMusical`, `interfaces.AparelhoTelefonico` e `interfaces.NavegadorInternet`.
+- A classe `iPhone` implementa as interfaces `ReprodutorMusical`, `AparelhoTelefonico` e `NavegadorInternet`.
 
 ## Implementação em Código Java
 
 Aqui está uma representação básica das classes e interfaces:
 ####
-### interfaces.AparelhoTelefonico.java
+### AparelhoTelefonico.java
 ```java
 public interface AparelhoTelefonico {
 void ligar(String numero);
@@ -34,7 +34,7 @@ void iniciarCorrerioVoz();
 }
 ```
 ####
-### interfaces.NavegadorInternet.java
+### NavegadorInternet.java
 ```java
 public interface NavegadorInternet {
 void exibirPagina(String url);
@@ -43,7 +43,7 @@ void atualizarPagina();
 }
 ```
 ####
-### interfaces.ReprodutorMusical.java
+### ReprodutorMusical.java
 ```java
 public interface ReprodutorMusical {
 void tocar();
@@ -52,7 +52,7 @@ void selecionarMusica(String musica);
 }
 ```
 ####
-### model.IPhone.java
+### IPhone.java
 ```java
 public class IPhone implements AparelhoTelefonico, NavegadorInternet , ReprodutorMusical {
 
